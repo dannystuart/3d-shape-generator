@@ -1,0 +1,48 @@
+{
+  "name": "3d-shape-generator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A free 3D shape generator — pick a shape, dress it with a material, lighting and effects, then download a PNG or copy the code.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
+    "build:engine": "node scripts/build-engine.mjs",
+    "fetch:env": "node scripts/fetch-environments.mjs",
+    "shoot:thumbs": "node scripts/shoot-thumbs.mjs",
+    "shoot:turns": "node scripts/shoot-turns.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^20",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "esbuild": "^0.28.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "jsdom": "^29.1.1",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@10.29.3"
+}

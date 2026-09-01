@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`toHtml > is the block it was last time, apart from the engine itself 1`] = `
+"<!-- 3D shape from https://vanta.supply/tools/3d-shape-generator -->
+<div id="shape" style="width:600px;max-width:100%;aspect-ratio:600/600"></div>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/" } }
+</script>
+<script type="module">
+…engine…
+    // ▼ Your shape. This is the part to edit.
+    // The "Studio soft" environment loads from https://vanta.supply/tools/3d-shape-generator/env/studio-soft.hdr. Copy the file to your own site and change assetBase if you'd rather not depend on ours.
+    const spec = coerceSpec({
+      "shape": "star-5",
+      "material": "gold",
+      "color": "#ffc65c",
+      "roughness": 0.2,
+      "metalness": 1
+    });
+    mount(document.getElementById("shape"), { spec, assetBase: "https://vanta.supply/tools/3d-shape-generator", interactive: true });
+</script>"
+`;
